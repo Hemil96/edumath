@@ -41,6 +41,24 @@ For vector operations
 - coplan()
 - ortho()
 
+Installation
+============
+Command line installation on Windows
+-------------------------------------
+- Keep setup.py and edumath.py in same directory.
+- open command prompt and write following
+- <code>setup.py install</code>
+
+Command line installation on Linux
+-------------------------------------
+- Keep setup.py and edumath.py in same directory.
+- open command prompt and write following
+- <code>python setup.py install</code>
+
+Direct install on 32 bit Windows
+---------------------------------
+If you wnt to install direct from an installer without using command line then just go to https://sourceforge.net/projects/edumath/ , read README.txt file and download edumath-1.0.win32.exe
+
 Contribution
 =============
 I started writing this module from 05-04-2014. I covered three topics of high school - Matrices, Progression and Vector Algebra. I am constanly working on edumath. If you find this module helpful and wnt to contribute, then you are allow to contribute on github. (http://www.guthub.com/daxeel/edumath)
