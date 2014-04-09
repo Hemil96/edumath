@@ -62,139 +62,139 @@ If you wnt to install direct from an installer without using command line then j
 Usage
 =====
 
----------------------------------------- Matrix Functions ----------------------------------------
+-------------------- Matrix Functions --------------------
 
-1. edumath.det_2c2(a,b,c,d)
+1. <code>edumath.det_2c2(a,b,c,d)</code>
    - This fuction will calculate determinant of two cross two matrix.
    - 'a' and 'b' are elements of first row and 'c' and 'd' are of second row.
 
-2. edumath.det_3c3(a,b,c,d,e,f,g,h,i)
+2. <code>edumath.det_3c3(a,b,c,d,e,f,g,h,i)</code>
    - This fuction will calculate determinant of three cross three matrix.
    - 'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.
 
-3. edumath.trans_2c2(a,b,c,d)
+3. <code>edumath.trans_2c2(a,b,c,d)</code>
    - This function will calculate transpose of two cross two matrix.
    - 'a' and 'b' are elements of first row and 'c' and 'd' are of second row.
 
-4. edumath.trans_3c3(a,b,c,d,e,f,g,h,i)
+4. <code>edumath.trans_3c3(a,b,c,d,e,f,g,h,i)</code>
    - This function will calculate transpose of three cross three matrix.
    - 'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.
 
-5. edumath.adj_2c2(a,b,c,d)
+5. <code>edumath.adj_2c2(a,b,c,d)</code>
    - This function will calculate adjoint of two cross two matrix.
    - 'a' and 'b' are elements of first row and 'c' and 'd' are of second row.
 
-6. edumath.adj_3c3(a,b,c,d,e,f,g,h,i)
+6. <code>edumath.adj_3c3(a,b,c,d,e,f,g,h,i)</code>
    - This function will calculate adjoint of three cross three matrix.
    - 'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.
 
-7. edumath.inv_2c2(a,b,c,d)
+7. <code>edumath.inv_2c2(a,b,c,d)</code>
    - This function will calculate inverse of two cross two matrix.
    - 'a' and 'b' are elements of first row and 'c' and 'd' are of second row.
 
-8. edumath.inv_3c3(a,b,c,d,e,f,g,h,i)
+8. <code>edumath.inv_3c3(a,b,c,d,e,f,g,h,i)</code>
    - This function will calculate inverse of three cross three matrix.
    - 'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.
 
-9. edumath.add_2c2(a,b,c,d,aa,bb,cc,dd)
+9. <code>edumath.add_2c2(a,b,c,d,aa,bb,cc,dd)</code>
    - This function will calculate addition of two, two cross two matrices.
    - 'a' and 'b' are elements of first row of first matrix and 'c' and 'd' are of second row of first matrix.
    - 'aa' and 'bb' are elements of first row of second matrix and 'cc' and 'dd' are of second row of second matrix.
 
-10. edumath.add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)
+10. <code>edumath.add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)</code>
    - This function will calculate addition of two, three cross three matrices.
    - 'a', 'b', 'c' are of first row of first matrix, 'd', 'e', 'f' are of second row of first matrix and 'g', 'h', 'i' are of third row of first matrix.
    - 'aa', 'bb', 'cc' are of first row of second matrix, 'dd', 'ee', 'ff' are of second row of second matrix and 'gg', 'hh', 'ii' are of third row of second matrix.
 
-11. edumath.sub_2c2(a,b,c,d,aa,bb,cc,dd)
+11. <code>edumath.sub_2c2(a,b,c,d,aa,bb,cc,dd)</code>
    - This function will calculate subtraction of two, two cross two matrices.
    - 'a' and 'b' are elements of first row of first matrix and 'c' and 'd' are of second row of first matrix.
    - 'aa' and 'bb' are elements of first row of second matrix and 'cc' and 'dd' are of second row of second matrix.
 
-12. edumath.sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)
+12. <code>edumath.sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)</code>
    - This function will calculate subtraction of two, three cross three matrices.
    - 'a', 'b', 'c' are of first row of first matrix, 'd', 'e', 'f' are of second row of first matrix and 'g', 'h', 'i' are of third row of first matrix.
    - 'aa', 'bb', 'cc' are of first row of second matrix, 'dd', 'ee', 'ff' are of second row of second matrix and 'gg', 'hh', 'ii' are of third row of second matrix.
 
----------------------------------------- Progression Functions ----------------------------------------
+-------------------- Progression Functions --------------------
 
-13. edumath.ap_term(a,b,c,d)
+13. <code>edumath.ap_term(a,b,c,d)</code>
    - This function will find nth term of an arithmetic progression.
    - 'a', 'b' and 'c' are first, second and third termm of an ap respectively.
    - 'd' is the nth term which you want to find out.
 
-14. edumath.gp_term(a,b,c,d)
+14. <code>edumath.gp_term(a,b,c,d)</code>
    - This function will find nth term of an geometric progression.
    - 'a', 'b' and 'c' are first, second and third termm of an gp respectively.
    - 'd' is the nth term which you want to find out.
 
-15. edumath.hp_term(a,b,c,d)
+15. <code>edumath.hp_term(a,b,c,d)</code>
    - This function will find nth term of an harmonic progression.
    - 'a', 'b' and 'c' are first, second and third termm of an hp respectively.
    - 'd' is the nth term which you want to find out.
 
-16. edumath.ap_sum(a,b,c,d)
+16. <code>edumath.ap_sum(a,b,c,d)</code>
    - This function will find fum of first n terms of an arithmetic progression.
    - 'a', 'b' and 'c' are first, second and third termm of an ap respectively.
    - 'd' is the first number of n terms of which you want to calculate sum.
 
-17. edumath.gp_sum(a,b,c,d)
+17. <code>edumath.gp_sum(a,b,c,d)</code>
    - This function will find fum of first n terms of an geometric progression.
    - 'a', 'b' and 'c' are first, second and third termm of an gp respectively.
    - 'd' is the first number of n terms of which you want to calculate sum.
 
----------------------------------------- Vector Functions ----------------------------------------
+-------------------- Vector Functions --------------------
 
-18. edumath.mag(a,b,c)
+18. <code>edumath.mag(a,b,c)</code>
    - This function will calculate magnitude of a vector.
    - 'a', 'b' and 'c' are x, y and z components of a vector respectively.
 
-19. edumath.dot(a,b,c,d,e,f)
+19. <code>edumath.dot(a,b,c,d,e,f)</code>
    - This fuction will calculate dot produst of two vectors.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
 
-20. edumath.cross(a,b,c,d,e,f)
+20. <code>edumath.cross(a,b,c,d,e,f)</code>
    - This fuction will calculate cross produst of two vectors.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
 
-21. edumath.box(a,b,c,d,e,f,g,h,i)
+21. <code>edumath.box(a,b,c,d,e,f,g,h,i)</code>
    - This fuction will calculate box produst of three vectors.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
    - 'g', 'h' and 'i' are x, y and z components of second vector respectively.
 
-22. edumath.triple(a,b,c,d,e,f,g,h,i)
+22. <code>edumath.triple(a,b,c,d,e,f,g,h,i)</code>
    - This fuction will calculate triple produst of three vectors.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
    - 'g', 'h' and 'i' are x, y and z components of second vector respectively.
 
-23. edumath.angle(a,b,c,d,e,f)
+23. <code>edumath.angle(a,b,c,d,e,f)</code>
    - This function will calculate angle between two vectors. (in radian)
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
 
-24. edumath.angx(a,b,c)
+24. <code>edumath.angx(a,b,c)</code>
    - This function will calculate angle between vector and x-axis.
    - 'a', 'b' and 'c' are x, y and z components of vector respectively.
 
-25. edumath.angy(a,b,c)
+25. <code>edumath.angy(a,b,c)</code>
    - This function will calculate angle between vector and y-axis.
    - 'a', 'b' and 'c' are x, y and z components of vector respectively.
 
-26. edumath.angz(a,b,c)
+26. <code>edumath.angz(a,b,c)</code>
    - This function will calculate angle between vector and z-axis.
    - 'a', 'b' and 'c' are x, y and z components of vector respectively.
 
-27. edumath.coplan(a,b,c,d,e,f,g,h,i)
+27. <code>edumath.coplan(a,b,c,d,e,f,g,h,i)</code>
    - This function will return TRUE if three vectors are complannar and if they are no coplannar it returns FALSE.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
    - 'g', 'h' and 'i' are x, y and z components of second vector respectively.
 
-28. edumath.ORTHO(a,b,c,d,e,f)
+28. <code>edumath.ORTHO(a,b,c,d,e,f)</code>
    - This function will return TRUE if two vectors are orthogonal and if they are no orthogonal it returns FALSE.
    - 'a', 'b' and 'c' are x, y and z components of first vector respectively.
    - 'd', 'e' and 'f' are x, y and z components of second vector respectively.
