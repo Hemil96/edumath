@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <title>Edumath by daxeel</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1>Edumath</h1>
+        <h2>edumath is a python module. You can do calculations of advance topics of mathematics of high school. In intial release v 1.0 it contains 28 functions for performing calculations.</h2>
+        <a href="https://github.com/daxeel/edumath" class="button"><small>View project on</small>GitHub</a>
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+          <h1>
+<a name="edumath" class="anchor" href="#edumath"><span class="octicon octicon-link"></span></a>edumath</h1>
+
+<p>edumath is a python module. You can do calculations of advance topics of mathematics of high school. In intial release v 1.0 it contains 28 functions for performing calculations.</p>
+
+<h1>
+<a name="what-are-the-fuctions-included" class="anchor" href="#what-are-the-fuctions-included"><span class="octicon octicon-link"></span></a>What are the fuctions included?</h1>
+
+<h2>
+<a name="for-matrix-operations" class="anchor" href="#for-matrix-operations"><span class="octicon octicon-link"></span></a>For matrix operations</h2>
+
+<ul>
+<li>det_2c2()</li>
+<li>det_3c3()</li>
+<li>trans_2c2()</li>
+<li>trans_3c3()</li>
+<li>adj_2c2()</li>
+<li>adj_3c3()</li>
+<li>inv_2c2()</li>
+<li>inv_3c3()</li>
+<li>add_2c2()</li>
+<li>add_3c3()</li>
+<li>sub_2c2()</li>
+<li>sub_3c3() </li>
+</ul><h2>
+<a name="for-progression-operations" class="anchor" href="#for-progression-operations"><span class="octicon octicon-link"></span></a>For progression operations</h2>
+
+<ul>
+<li>ap_term()</li>
+<li>gp_term()</li>
+<li>hp_term()</li>
+<li>ap_sum()</li>
+<li>gp_sum()</li>
+</ul><h2>
+<a name="for-vector-operations" class="anchor" href="#for-vector-operations"><span class="octicon octicon-link"></span></a>For vector operations</h2>
+
+<ul>
+<li>mag()</li>
+<li>dot()</li>
+<li>cross()</li>
+<li>box()</li>
+<li>triple()</li>
+<li>angle()</li>
+<li>angx()</li>
+<li>angy()</li>
+<li>angz()</li>
+<li>coplan()</li>
+<li>ortho()</li>
+</ul><h1>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h1>
+
+<h2>
+<a name="command-line-installation-on-windows" class="anchor" href="#command-line-installation-on-windows"><span class="octicon octicon-link"></span></a>Command line installation on Windows</h2>
+
+<ul>
+<li>Keep setup.py and edumath.py in same directory.</li>
+<li>open command prompt and write following</li>
+<li><code>setup.py install</code></li>
+</ul><h2>
+<a name="command-line-installation-on-linux" class="anchor" href="#command-line-installation-on-linux"><span class="octicon octicon-link"></span></a>Command line installation on Linux</h2>
+
+<ul>
+<li>Keep setup.py and edumath.py in same directory.</li>
+<li>open command prompt and write following</li>
+<li><code>python setup.py install</code></li>
+</ul><h2>
+<a name="direct-install-on-32-bit-windows" class="anchor" href="#direct-install-on-32-bit-windows"><span class="octicon octicon-link"></span></a>Direct install on 32 bit Windows</h2>
+
+<p>If you wnt to install direct from an installer without using command line then just go to <a href="https://sourceforge.net/projects/edumath/">https://sourceforge.net/projects/edumath/</a> , read README.txt file and download edumath-1.0.win32.exe</p>
+
+<h1>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>-------------------- Matrix Functions --------------------</p>
+
+<ol>
+<li>
+<p><code>edumath.det_2c2(a,b,c,d)</code></p>
+
+<ul>
+<li>This fuction will calculate determinant of two cross two matrix.</li>
+<li>'a' and 'b' are elements of first row and 'c' and 'd' are of second row.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.det_3c3(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This fuction will calculate determinant of three cross three matrix.</li>
+<li>'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.trans_2c2(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will calculate transpose of two cross two matrix.</li>
+<li>'a' and 'b' are elements of first row and 'c' and 'd' are of second row.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.trans_3c3(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This function will calculate transpose of three cross three matrix.</li>
+<li>'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.adj_2c2(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will calculate adjoint of two cross two matrix.</li>
+<li>'a' and 'b' are elements of first row and 'c' and 'd' are of second row.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.adj_3c3(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This function will calculate adjoint of three cross three matrix.</li>
+<li>'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.inv_2c2(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will calculate inverse of two cross two matrix.</li>
+<li>'a' and 'b' are elements of first row and 'c' and 'd' are of second row.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.inv_3c3(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This function will calculate inverse of three cross three matrix.</li>
+<li>'a', 'b', 'c' are of first row, 'd', 'e', 'f' are of second row and 'g', 'h', 'i' are of third row elements.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.add_2c2(a,b,c,d,aa,bb,cc,dd)</code></p>
+
+<ul>
+<li>This function will calculate addition of two, two cross two matrices.</li>
+<li>'a' and 'b' are elements of first row of first matrix and 'c' and 'd' are of second row of first matrix.</li>
+<li>'aa' and 'bb' are elements of first row of second matrix and 'cc' and 'dd' are of second row of second matrix.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)</code></p>
+
+<ul>
+<li>This function will calculate addition of two, three cross three matrices.</li>
+<li>'a', 'b', 'c' are of first row of first matrix, 'd', 'e', 'f' are of second row of first matrix and 'g', 'h', 'i' are of third row of first matrix.</li>
+<li>'aa', 'bb', 'cc' are of first row of second matrix, 'dd', 'ee', 'ff' are of second row of second matrix and 'gg', 'hh', 'ii' are of third row of second matrix.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.sub_2c2(a,b,c,d,aa,bb,cc,dd)</code></p>
+
+<ul>
+<li>This function will calculate subtraction of two, two cross two matrices.</li>
+<li>'a' and 'b' are elements of first row of first matrix and 'c' and 'd' are of second row of first matrix.</li>
+<li>'aa' and 'bb' are elements of first row of second matrix and 'cc' and 'dd' are of second row of second matrix.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii)</code></p>
+
+<ul>
+<li>This function will calculate subtraction of two, three cross three matrices.</li>
+<li>'a', 'b', 'c' are of first row of first matrix, 'd', 'e', 'f' are of second row of first matrix and 'g', 'h', 'i' are of third row of first matrix.</li>
+<li>'aa', 'bb', 'cc' are of first row of second matrix, 'dd', 'ee', 'ff' are of second row of second matrix and 'gg', 'hh', 'ii' are of third row of second matrix.</li>
+</ul>
+</li>
+</ol><p>-------------------- Progression Functions --------------------</p>
+
+<ol>
+<li>
+<p><code>edumath.ap_term(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will find nth term of an arithmetic progression.</li>
+<li>'a', 'b' and 'c' are first, second and third termm of an ap respectively.</li>
+<li>'d' is the nth term which you want to find out.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.gp_term(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will find nth term of an geometric progression.</li>
+<li>'a', 'b' and 'c' are first, second and third termm of an gp respectively.</li>
+<li>'d' is the nth term which you want to find out.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.hp_term(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will find nth term of an harmonic progression.</li>
+<li>'a', 'b' and 'c' are first, second and third termm of an hp respectively.</li>
+<li>'d' is the nth term which you want to find out.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.ap_sum(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will find fum of first n terms of an arithmetic progression.</li>
+<li>'a', 'b' and 'c' are first, second and third termm of an ap respectively.</li>
+<li>'d' is the first number of n terms of which you want to calculate sum.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.gp_sum(a,b,c,d)</code></p>
+
+<ul>
+<li>This function will find fum of first n terms of an geometric progression.</li>
+<li>'a', 'b' and 'c' are first, second and third termm of an gp respectively.</li>
+<li>'d' is the first number of n terms of which you want to calculate sum.</li>
+</ul>
+</li>
+</ol><p>-------------------- Vector Functions --------------------</p>
+
+<ol>
+<li>
+<p><code>edumath.mag(a,b,c)</code></p>
+
+<ul>
+<li>This function will calculate magnitude of a vector.</li>
+<li>'a', 'b' and 'c' are x, y and z components of a vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.dot(a,b,c,d,e,f)</code></p>
+
+<ul>
+<li>This fuction will calculate dot produst of two vectors.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.cross(a,b,c,d,e,f)</code></p>
+
+<ul>
+<li>This fuction will calculate cross produst of two vectors.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.box(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This fuction will calculate box produst of three vectors.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+<li>'g', 'h' and 'i' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.triple(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This fuction will calculate triple produst of three vectors.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+<li>'g', 'h' and 'i' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.angle(a,b,c,d,e,f)</code></p>
+
+<ul>
+<li>This function will calculate angle between two vectors. (in radian)</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.angx(a,b,c)</code></p>
+
+<ul>
+<li>This function will calculate angle between vector and x-axis.</li>
+<li>'a', 'b' and 'c' are x, y and z components of vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.angy(a,b,c)</code></p>
+
+<ul>
+<li>This function will calculate angle between vector and y-axis.</li>
+<li>'a', 'b' and 'c' are x, y and z components of vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.angz(a,b,c)</code></p>
+
+<ul>
+<li>This function will calculate angle between vector and z-axis.</li>
+<li>'a', 'b' and 'c' are x, y and z components of vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.coplan(a,b,c,d,e,f,g,h,i)</code></p>
+
+<ul>
+<li>This function will return TRUE if three vectors are complannar and if they are no coplannar it returns FALSE.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+<li>'g', 'h' and 'i' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+<li>
+<p><code>edumath.ORTHO(a,b,c,d,e,f)</code></p>
+
+<ul>
+<li>This function will return TRUE if two vectors are orthogonal and if they are no orthogonal it returns FALSE.</li>
+<li>'a', 'b' and 'c' are x, y and z components of first vector respectively.</li>
+<li>'d', 'e' and 'f' are x, y and z components of second vector respectively.</li>
+</ul>
+</li>
+</ol><h1>
+<a name="contribution" class="anchor" href="#contribution"><span class="octicon octicon-link"></span></a>Contribution</h1>
+
+<p>I started writing this module from 05-04-2014. I covered three topics of high school - Matrices, Progression and Vector Algebra. I am constanly working on edumath. If you find this module helpful and wnt to contribute, then you are allow to contribute on github. (<a href="http://www.guthub.com/daxeel/edumath">http://www.guthub.com/daxeel/edumath</a>)
+I request that insert your code in respective section of mathematics topics. So, in future it can be very easy to maintain edumath project.
+In next version release i will give credits to all the contributors.</p>
+
+<h1>
+<a name="bug-fixing" class="anchor" href="#bug-fixing"><span class="octicon octicon-link"></span></a>Bug Fixing</h1>
+
+<p>If you found any bug in this module then you can edit it by commiting on github. (<a href="http://www.guthub.com/daxeel/edumath">http://www.guthub.com/daxeel/edumath</a>)</p>
+        </section>
+
+        <aside id="sidebar">
+          <a href="https://github.com/daxeel/edumath/zipball/master" class="button">
+            <small>Download</small>
+            .zip file
+          </a>
+          <a href="https://github.com/daxeel/edumath/tarball/master" class="button">
+            <small>Download</small>
+            .tar.gz file
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/daxeel/edumath"></a> is maintained by <a href="https://github.com/daxeel">daxeel</a>.</p>
+
+          <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
+        </aside>
+      </div>
+    </div>
+
+  
+  </body>
+</html>
