@@ -42,28 +42,28 @@
 
 def det_2c2(a,b,c,d):
     x = (d * a) - (b * c)
-    print(x)
+    return(x)
 def det_3c3(a,b,c,d,e,f,g,h,i):
     x = (a*((e*i)-(h*f)))-(b*((d*i)-(g*f)))+(c*((d*h)-(e*g)))
-    print(x)
+    return(x)
 
 # ---------------------------- Transpose ------------------------------
 
 def trans_2c2(a,b,c,d):
-    print(a,'   ',c)
-    print(b,'   ',d)
+    return(a,'   ',c)
+    return(b,'   ',d)
 def trans_3c3(a,b,c,d,e,f,g,h,i):
-    print(a,'   ',d,'   ',g)
-    print(b,'   ',e,'   ',h)
-    print(c,'   ',f,'   ',i)
+    return(a,'   ',d,'   ',g)
+    return(b,'   ',e,'   ',h)
+    return(c,'   ',f,'   ',i)
 
 # ---------------------------- Adjoint --------------------------------
 
 def adj_2c2(a,b,c,d):
     bb = -1 * b
     cc = -1 * c
-    print(d,'   ',bb)
-    print(cc,'   ',a)
+    return(d,'   ',bb)
+    return(cc,'   ',a)
 def adj_3c3(a,b,c,d,e,f,g,h,i):
     aa = (e*i)-(h*f)
     bb = (g*f)-(d*i)
@@ -74,9 +74,9 @@ def adj_3c3(a,b,c,d,e,f,g,h,i):
     gg = (f*b)-(e*c)
     hh = (c*d)-(a*f)
     ii = (a*e)-(b*d)
-    print(aa,'   ',dd,'   ',gg)
-    print(bb,'   ',ee,'   ',hh)
-    print(cc,'   ',ff,'   ',ii)
+    return(aa,'   ',dd,'   ',gg)
+    return(bb,'   ',ee,'   ',hh)
+    return(cc,'   ',ff,'   ',ii)
 
 # ---------------------------- Inverse --------------------------------
 
@@ -84,8 +84,8 @@ def inv_2c2(a,b,c,d):
     bb = -1 * b
     cc = -1 * c
     det=(d*a)-(c*b)
-    print(format(d/det, '.2f'),'     ',format(bb/det, '.2f'))
-    print(format(cc/det, '.2f'),'     ',format(a/det, '.2f'))
+    return(format(d/det, '.2f'),'     ',format(bb/det, '.2f'))
+    return(format(cc/det, '.2f'),'     ',format(a/det, '.2f'))
 def inv_3c3(a,b,c,d,e,f,g,h,i):
     det=(a*((e*i)-(h*f)))-(b*((d*i)-(g*f)))+(c*((d*h)-(e*g)))
     aa = (e*i)-(h*f)
@@ -97,9 +97,9 @@ def inv_3c3(a,b,c,d,e,f,g,h,i):
     gg = (f*b)-(e*c)
     hh = (c*d)-(a*f)
     ii = (a*e)-(b*d)
-    print(format(aa/det, '.2f'),'   ',format(dd/det, '.2f'),'   ',format(gg/det, '.2f'))
-    print(format(bb/det, '.2f'),'   ',format(ee/det, '.2f'),'   ',format(hh/det, '.2f'))
-    print(format(cc/det, '.2f'),'   ',format(ff/det, '.2f'),'   ',format(ii/det, '.2f'))
+    return(format(aa/det, '.2f'),'   ',format(dd/det, '.2f'),'   ',format(gg/det, '.2f'))
+    return(format(bb/det, '.2f'),'   ',format(ee/det, '.2f'),'   ',format(hh/det, '.2f'))
+    return(format(cc/det, '.2f'),'   ',format(ff/det, '.2f'),'   ',format(ii/det, '.2f'))
 
 # ---------------------------- Addition -------------------------------
 
@@ -108,8 +108,8 @@ def add_2c2(a,b,c,d,aa,bb,cc,dd):
     x = b + bb
     y = c + cc
     z = d + dd
-    print(w,'   ',x)
-    print(y,'   ',z)
+    return(w,'   ',x)
+    return(y,'   ',z)
 def add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     r = a + aa
     s = b + bb
@@ -120,9 +120,9 @@ def add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     x = g + gg
     y = h + hh
     z = i + ii
-    print(r,'   ',s,'   ',t)
-    print(u,'   ',v,'   ',w)
-    print(x,'   ',y,'   ',z)
+    return(r,'   ',s,'   ',t)
+    return(u,'   ',v,'   ',w)
+    return(x,'   ',y,'   ',z)
 
 # ---------------------------- Subtraction -----------------------------
 
@@ -131,8 +131,8 @@ def sub_2c2(a,b,c,d,aa,bb,cc,dd):
     x = b - bb
     y = c - cc
     z = d - dd
-    print(w,'   ',x)
-    print(y,'   ',z)
+    return(w,'   ',x)
+    return(y,'   ',z)
 def sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     r = a - aa
     s = b - bb
@@ -143,45 +143,45 @@ def sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     x = g - gg
     y = h - hh
     z = i - ii
-    print(r,'   ',s,'   ',t)
-    print(u,'   ',v,'   ',w)
-    print(x,'   ',y,'   ',z)
+    return(r,'   ',s,'   ',t)
+    return(u,'   ',v,'   ',w)
+    return(x,'   ',y,'   ',z)
 
 # ---------------------------- AP nth term ------------------------------------
 
 def ap_term(a,b,c,d):
     if (2 * b) == (a + c):
         x = a + ((d - 1) * (b - a))
-        print(x)
+        return(x)
     else:
-        print('Error : ',a,',',b,',',c,' are not in arithmetic progression')
+        return('Error : ',a,',',b,',',c,' are not in arithmetic progression')
 
 # ---------------------------- GP nth term ------------------------------------
 
 def gp_term(a,b,c,d):
     if (b * b) == (a * c):
         x = a * ((b / a) ** (d - 1))
-        print(x)
+        return(x)
     else:
-        print('Error : ',a,',',b,',',c,' are not in geometric progression')
+        return('Error : ',a,',',b,',',c,' are not in geometric progression')
 
 # ---------------------------- HP nth term ------------------------------------
 
 def hp_term(a,b,c,d):
     if ((1 / b) - (1 / a)) == ((1 / c) - (1 / b)):
         x = 1 / (a + ((d - 1) * (b - a)))
-        print(x)
+        return(x)
     else:
-        print('Error : ',a,',',b,',',c,' are not in harmonic progression')
+        return('Error : ',a,',',b,',',c,' are not in harmonic progression')
 
 # ---------------------------- Sum of first n terms of AP ---------------------
 
 def ap_sum(a,b,c,d):
     if (2 * b) == (a + c):
         x = (d / 2) * ((2 * a) + ((d - 1) * (b - a)))
-        print(x)
+        return(x)
     else:
-        print('Error : ',a,',',b,',',c,' are not in arithmetic progression')
+        return('Error : ',a,',',b,',',c,' are not in arithmetic progression')
 
 # ---------------------------- Sum of first n terms of GP ---------------------
 
@@ -189,12 +189,12 @@ def gp_sum(a,b,c,d):
     if (b * b) == (a * c):
         if (b / a) > 1:
             x = a * ((((b / a) ** d) - 1) / ((b / a) - 1))
-            print(x)
+            return(x)
         elif (b / a) < 1:
             x = a * ((1 - ((b / a) ** d)) / (1 - (b / a)))
-            print(x)
+            return(x)
     else:
-        print('Error : ',a,',',b,',',c,' are not in geometric progression')
+        return('Error : ',a,',',b,',',c,' are not in geometric progression')
 
 import math
 
@@ -202,28 +202,28 @@ import math
 
 def mag(a,b,c):
     x = math.sqrt((a * a) + (b * b) + (c * c))
-    print(x)
+    return(x)
     
 # ---------------------------- Vector Products ------------------------
 
 def dot(a,b,c,aa,bb,cc):
     x = (a * aa) + (b * bb) + (c * cc)
-    print(x)
+    return(x)
 def cross(a,b,c,d,e,f):
     x = (b * f) - (e * c)
     y = (c * d) - (a * f)
     z = (a * e) - (b * d)
-    print(x,'  ',y,'  ',z)
+    return(x,'  ',y,'  ',z)
 def box(a,b,c,d,e,f,g,h,i):
     x = (a*((e*i)-(h*f)))-(b*((d*i)-(g*f)))+(c*((d*h)-(e*g)))
-    print(x)
+    return(x)
 def triple(a,b,c,d,e,f,g,h,i):
     x = (a * g) + (b * h) + (c * i)
     y = (a * d) + (b * e) + (c * f)
     xc = (x * d) - (y * g)
     yc = (x * e) - (y * h)
     zc = (x * f) - (y * i)
-    print(xc,'',yc,'',zc)
+    return(xc,'',yc,'',zc)
 
 # ------------- Angle between two vectors (in radian) -----------------
 
@@ -234,7 +234,7 @@ def angle(a,b,c,d,e,f):
     xym = xm * ym
     final = xy / xym
     ans = math.acos(final)
-    print(ans)
+    return(ans)
 
 # ------- Angle between vector and positive X-Axis (in radian) ---------
 
@@ -242,7 +242,7 @@ def angx(a,b,c):
     mod = math.sqrt((a * a) + (b * b) + (c * c))
     final = a / mod
     ans = math.acos(final)
-    print(ans)
+    return(ans)
 
 # ------- Angle between vector and positive Y-Axis (in radian) ---------
 
@@ -250,7 +250,7 @@ def angy(a,b,c):
     mod = math.sqrt((a * a) + (b * b) + (c * c))
     final = b / mod
     ans = math.acos(final)
-    print(ans)
+    return(ans)
 
 # ------- Angle between vector and positive Z-Axis (in radian) ---------
 
@@ -258,25 +258,25 @@ def angz(a,b,c):
     mod = math.sqrt((a * a) + (b * b) + (c * c))
     final = c / mod
     ans = math.acos(final)
-    print(ans)
+    return(ans)
 
 # ---------------------- Coplannar Vectors -----------------------------
 
 def coplan(a,b,c,d,e,f,g,h,i):
     x = (a*((e*i)-(h*f)))-(b*((d*i)-(g*f)))+(c*((d*h)-(e*g)))
     if x == 0:
-        print('True')
+        return('True')
     else:
-        print('False')
+        return('False')
 
 # ---------------------- Orthogonal Vectors -----------------------------
 
 def ortho(a,b,c,d,e,f):
     x = (a * d) + (b * e) + (c * f)
     if x == 0:
-        print('True')
+        return('True')
     else:
-        print('False')
+        return('False')
 
 # ---------------------------- End ------------------------------------
 
