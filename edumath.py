@@ -50,20 +50,20 @@ def det_3c3(a,b,c,d,e,f,g,h,i):
 # ---------------------------- Transpose ------------------------------
 
 def trans_2c2(a,b,c,d):
-    return(a,'   ',c)
-    return(b,'   ',d)
+    trans_2c2 = [(a,'   ',c),(b,'   ',d)]
+    return trans_2c2
 def trans_3c3(a,b,c,d,e,f,g,h,i):
-    return(a,'   ',d,'   ',g)
-    return(b,'   ',e,'   ',h)
-    return(c,'   ',f,'   ',i)
+    trans_3c3 = [(a,'   ',d,'   ',g),(b,'   ',e,'   ',h),(c,'   ',f,'   ',i)]
+    return trans_3c3
 
 # ---------------------------- Adjoint --------------------------------
 
 def adj_2c2(a,b,c,d):
     bb = -1 * b
     cc = -1 * c
-    return(d,'   ',bb)
-    return(cc,'   ',a)
+    adj_2c2 = [(d,'   ',bb),(cc,'   ',a)]
+    return adj_2c2
+   
 def adj_3c3(a,b,c,d,e,f,g,h,i):
     aa = (e*i)-(h*f)
     bb = (g*f)-(d*i)
@@ -74,18 +74,16 @@ def adj_3c3(a,b,c,d,e,f,g,h,i):
     gg = (f*b)-(e*c)
     hh = (c*d)-(a*f)
     ii = (a*e)-(b*d)
-    return(aa,'   ',dd,'   ',gg)
-    return(bb,'   ',ee,'   ',hh)
-    return(cc,'   ',ff,'   ',ii)
-
+    adj_3c3 = [(aa,'   ',dd,'   ',gg),(bb,'   ',ee,'   ',hh),(cc,'   ',ff,'   ',ii)]
+    return adj_3c3
 # ---------------------------- Inverse --------------------------------
 
 def inv_2c2(a,b,c,d):
     bb = -1 * b
     cc = -1 * c
     det=(d*a)-(c*b)
-    return(format(d/det, '.2f'),'     ',format(bb/det, '.2f'))
-    return(format(cc/det, '.2f'),'     ',format(a/det, '.2f'))
+    inv_2c2 = [(format(d/det, '.2f'),'     ',format(bb/det, '.2f')),(format(d/det, '.2f'),'     ',format(bb/det, '.2f'))]
+    return inv_2c2
 def inv_3c3(a,b,c,d,e,f,g,h,i):
     det=(a*((e*i)-(h*f)))-(b*((d*i)-(g*f)))+(c*((d*h)-(e*g)))
     aa = (e*i)-(h*f)
@@ -97,9 +95,8 @@ def inv_3c3(a,b,c,d,e,f,g,h,i):
     gg = (f*b)-(e*c)
     hh = (c*d)-(a*f)
     ii = (a*e)-(b*d)
-    return(format(aa/det, '.2f'),'   ',format(dd/det, '.2f'),'   ',format(gg/det, '.2f'))
-    return(format(bb/det, '.2f'),'   ',format(ee/det, '.2f'),'   ',format(hh/det, '.2f'))
-    return(format(cc/det, '.2f'),'   ',format(ff/det, '.2f'),'   ',format(ii/det, '.2f'))
+    inv_3c3 = [(format(aa/det, '.2f'),'   ',format(dd/det, '.2f'),'   ',format(gg/det, '.2f')),(format(bb/det, '.2f'),'   ',format(ee/det, '.2f'),'   ',format(hh/det, '.2f')),(format(cc/det, '.2f'),'   ',format(ff/det, '.2f'),'   ',format(ii/det, '.2f'))]
+    return inv_3c3
 
 # ---------------------------- Addition -------------------------------
 
@@ -108,8 +105,9 @@ def add_2c2(a,b,c,d,aa,bb,cc,dd):
     x = b + bb
     y = c + cc
     z = d + dd
-    return(w,'   ',x)
-    return(y,'   ',z)
+    add_2c2 = [(w,'   ',x),(y,'   ',z)]
+    return add_2c2
+ 
 def add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     r = a + aa
     s = b + bb
@@ -120,9 +118,9 @@ def add_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     x = g + gg
     y = h + hh
     z = i + ii
-    return(r,'   ',s,'   ',t)
-    return(u,'   ',v,'   ',w)
-    return(x,'   ',y,'   ',z)
+    add_3c3 = [(r,'   ',s,'   ',t),(u,'   ',v,'   ',w),(x,'   ',y,'   ',z)]
+    return adj_3c3
+   
 
 # ---------------------------- Subtraction -----------------------------
 
@@ -131,8 +129,9 @@ def sub_2c2(a,b,c,d,aa,bb,cc,dd):
     x = b - bb
     y = c - cc
     z = d - dd
-    return(w,'   ',x)
-    return(y,'   ',z)
+    sub_2c2 = [(w,'   ',x),(y,'   ',z)]
+    return sub_2c2
+   
 def sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     r = a - aa
     s = b - bb
@@ -143,10 +142,9 @@ def sub_3c3(a,b,c,d,e,f,g,h,i,aa,bb,cc,dd,ee,ff,gg,hh,ii):
     x = g - gg
     y = h - hh
     z = i - ii
-    return(r,'   ',s,'   ',t)
-    return(u,'   ',v,'   ',w)
-    return(x,'   ',y,'   ',z)
-
+    sub_3c3 = [(r,'   ',s,'   ',t),(u,'   ',v,'   ',w),(x,'   ',y,'   ',z)]
+    return sub_3c3
+   
 # ---------------------------- AP nth term ------------------------------------
 
 def ap_term(a,b,c,d):
@@ -283,3 +281,5 @@ def ortho(a,b,c,d,e,f):
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
+
+
